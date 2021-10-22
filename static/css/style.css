@@ -1,0 +1,15 @@
+div{
+    margin: 0px auto;
+    width: 800px;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    margin: 0px auto;
+    width: 200px;
+}
+
+.wrapper{
+    text-align: center;
+}

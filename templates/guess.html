@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Guess" content="Assignment five.">
+    <title>Great Number Game</title>
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='css/guess_style.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Welcome to the Great Number Game!</h2>
+        <p>I am thinking of a number between 1 and 100</p>
+        <p>Take a guess!</p>
+        {% if client_guess > random_number %}
+        <p class="high">Too high!</p>
+        <form action='/process_guess' method='post'>
+            <input type='text' name='guess'>
+            <button type='submit'>Submit</button>
+        </form>
+        {% elif random_number > client_guess %}
+        <p class="low">Too low!</p>
+        <form action='/process_guess' method='post'>
+            <input type='text' name='guess'>
+            <button type='submit'>Submit</button>
+        </form>
+        {% elif client_guess == random_number %}
+        <p class="correct">{{random_number}} was the number!
+        <form action='/restart' method='post'>
+            <button type='submit'>Play Again!</button>
+        </form>
+        </p>
+        {% endif %}
+
+    </div>
+</body>
+
+</html>

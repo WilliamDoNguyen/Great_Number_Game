@@ -1,0 +1,45 @@
+div{
+    margin: 0px auto;
+    width: 800px;
+    text-align: center;
+}
+
+.low{
+    outline: solid black 1px;
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    padding-top: 99px;
+    margin: 0px auto;
+    color: white;
+}
+
+.high{
+    outline: solid black 1px;
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    padding-top: 99px;
+    margin: 0px auto;
+    color: white;
+}
+
+.correct{
+    outline: solid black 1px;
+    background-color: green;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    padding-top: 99px;
+    margin: 0px auto;
+    color: white;
+}
+
+form{
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 200px;
+}
